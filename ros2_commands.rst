@@ -1,11 +1,22 @@
-SOURCE :
+SOURCE:
     underlay : source /opt/ros/<distro>/setup.bash
-    overlay : source install/setup.bash 
+    overlay : source my_robot/install/setup.bash 
 
-URDF :
-    visualize a URDF model : 
-        install : sudo apt install ros-<distro>-urdf-tutorial
-        ros2 launch urdf_tutorial display.launch.py model:=my_robot.urdf
-    create a URDF Tree :
-        install : sudo apt install ros-<distro>-tf2-tools
-        while running tf topic, ros2 run tf2_tools view_frames 
+BUID: 
+    always build from the _ws directory
+    colcon build
+
+PKG:
+    ros2 pkg create --build-type ament_python robot_descripton
+
+passing arguments at cli :
+    any argument : --ros-args 
+    param as an argument : --ros-args -p 
+
+INSTALL DIR: whenever a directory is created under a pkg. It needs to be installed in "/opt/ros/jazzy/share", so that it can be found.
+    install(
+        DIRECTORY urdf launch
+        DESTINATION share/${PROJECT_NAME}/
+    )
+
+launch : invoke only those packages that are installed in share
