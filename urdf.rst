@@ -28,3 +28,14 @@ Nodes :
 
     rviz node:
         visualizes the /tf /robot_description
+
+xacro : helps to create parametric design using variables
+    <xacro:property name="wheel_radius" value="0.1">
+    command : xacro file_name.xacro --> creates a plain urdf file from a xacro file.
+
+macro : Functions
+    <xacro:macro name="dummy_macro" params="a b c">
+        ${a}
+    </xacro:macro>
+
+ros2 launch ros_gz_sim gz_sim.launch.py
