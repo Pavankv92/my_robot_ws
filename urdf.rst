@@ -1,4 +1,6 @@
-URDF : physical description of a robot
+URDF : physical description of a robot with
+    Rviz : Visual tag is needed 
+    Gazebo:  collision and inertia tags are needed
     origin in the visual tag represents, CSys of the CG of its own body. 
     origin in the join tag represents TF between 2 links : base_link_TF_second_link
         First set visual tag to zeros --> adjust the joints/TF --> go back adjust the visual
