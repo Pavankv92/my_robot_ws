@@ -13,6 +13,9 @@ URDF : physical description of a robot with
         while running /tf topic, ros2 run tf2_tools view_frames 
 
 TF : relative transforms of various joints in a robot.
+    to check the TF between any 2 joints,
+        run : ros2 tun tf2_ros tf2_echo base_link second_link
+    
 
 Nodes :
     robot_state_publisher node: 
