@@ -9,9 +9,9 @@ class AddTwoIntsServerNode(Node):
         self._server = self.create_service(AddTwoInts, 'add_two_ints', self.callback_add_two_ints)
         self.get_logger().info("Add Two Ints Server has been started")
 
-    def callback_add_two_ints(self, request, response):
+    def callback_add_two_ints(self, request : AddTwoInts.Request, response : AddTwoInts.Response) -> AddTwoInts.Response:
         response.sum = request.a + request.b
-        self.get_logger().info(f"Incoming request\na: {request.a}, b: {request.b}")
+        self.get_logger().info(f"Incoming request a: {request.a}, b: {request.b}")
         self.get_logger().info(f"Sending response: {response.sum}")
         return response
 
