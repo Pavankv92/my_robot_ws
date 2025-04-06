@@ -10,6 +10,7 @@
   
   <!-- General dependency -->
   <depend>rclpy</depend>
+  <depend>my_robot_interfaces</depend>
 
   <!-- Runtime dependency -->
   <exec_depend>std_msgs</exec_depend>
