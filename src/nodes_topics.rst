@@ -7,6 +7,8 @@ Node:
     ros2 node info /node_name
     launch same node with different name, runtime rename: --remap or -r both works
         ros2 run pkg_name node_name --ros-args --remap __node:=new_node_name
+        ros2 run pkg_name node_name --ros-args --remap __ns:=/new_name_space
+
 
 Topics:
     ros2 topic list
@@ -31,3 +33,16 @@ Debugging:
         remappings, rename nodes, Topics
         interface show, 
         rqt_graph
+
+leading_slash :
+    if you ADD a leading slah to to topic name in the node: 
+        self.create_publisher(String, '/my_topic', 10)
+        node's snamespace will NOT be added.
+    if you DONT ADD a leading slah to to topic name in the node: 
+        self.create_publisher(String, 'my_topic', 10)
+        leading slash will be automatically added 
+        node's snamespace WILL be added.
+    recommendation:
+        It is recommended NOT to add a leading slash to the topic name in the node.
+        This ensures that the namespace is automatically added, making the topic name
+        more flexible and consistent with the node's namespace.

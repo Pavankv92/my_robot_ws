@@ -35,8 +35,11 @@ ROS2 automatically add service server for params:
 
 
 yaml file:
-/node_name:
+/name_space/node_name:
     ros__parameters:
         number: 8
         timer_period: 0.5 
+
+wild card
+/** : all nodes, all paarameters
 
