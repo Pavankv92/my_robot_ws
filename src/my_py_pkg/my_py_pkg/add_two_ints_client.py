@@ -20,7 +20,7 @@ class AddTwoIntsServerClient(Node):
         request.a = a
         request.b = b
 
-        # send a request async
+        # send a request async. async doesn't clock the thread
         future = self._client.call_async(request)
         # future.add_done_callback(self.callback_call_add_two_int) --> this works!
         # to add an extra parameter to future.add_done_callback --> use partial

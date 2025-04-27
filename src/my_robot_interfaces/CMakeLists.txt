@@ -12,8 +12,9 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HardwareStatus.msg"
-
   "srv/GoHomePosition.srv"
+  "action/CountUntil.action"
+
 
    # Add packages that above messages depend on
 )
