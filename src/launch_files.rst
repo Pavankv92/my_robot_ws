@@ -13,10 +13,13 @@ xml:
     </node>
 
 python:
-    complicated! TODO : check which launch files are common in ROS2 --> Python launch files are used all over!
+   
     ramappings= [('old_topic_name', 'new_topic_name')] --> [()] 
+
     parameters= [{'param_name' : value}] --> [{}]
+
     parameters= ['path_to_config_file'] 
+
     namespace='/new_name_space'
 
 
@@ -40,7 +43,7 @@ declaring launch argument to pass cmd arguements while launching launch files
     )
 
     cmd : 
-        check : os2 launch launch_tutorial example_substitutions_launch.py --show-args
+        check : ros2 launch launch_tutorial example_substitutions_launch.py --show-args
 
             Arguments (pass arguments as '<name>:=<value>'):
 
@@ -56,6 +59,7 @@ CMakeLists.txt :
     INSTALL DIR: whenever a directory is created under a pkg. It needs to be installed in "share", so that it can be found.
         install(
             DIRECTORY urdf launch
+            
             DESTINATION share/${PROJECT_NAME}/
         )
 

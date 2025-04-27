@@ -14,7 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HardwareStatus.msg"
   "srv/GoHomePosition.srv"
   "action/CountUntil.action"
-
+  "action/MoveRobot.action"
 
    # Add packages that above messages depend on
 )
