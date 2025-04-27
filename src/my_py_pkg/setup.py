@@ -28,6 +28,10 @@ setup(
             'add_two_ints_client = my_py_pkg.add_two_ints_client:main',
             'hardware_status_publisher = my_py_pkg.hardware_status_publisher:main',
             'param_publisher = my_py_pkg.param_publisher:main',
+            'count_until_server = my_py_pkg.count_until_server:main',
+            'count_until_client = my_py_pkg.count_until_client:main',
+
+
 
 
         ],
