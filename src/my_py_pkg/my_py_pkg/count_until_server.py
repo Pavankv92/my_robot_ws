@@ -69,9 +69,9 @@ class CountUntilServerNode(Node):
     def _process_next_goal_in_queue(self):
         with self._goal_handle_lock:
             if len(self._goal_queue) > 0:
-                current_goal_hanlde = self._goal_queue[0]
+                current_goal_handle = self._goal_queue[0]
                 self._goal_queue.pop(0)
-                current_goal_hanlde.execute() # calls the fucntion defined in the execute_callback --> self._on_execute()
+                current_goal_handle.execute() # calls the fucntion defined in the execute_callback --> self._on_execute()
             else:
                 self._goal_handle = None
                 
