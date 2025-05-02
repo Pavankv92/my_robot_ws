@@ -32,7 +32,9 @@ setup(
             'count_until_client = my_py_pkg.count_until_client:main',
             'move_robot_server = my_py_pkg.move_robot_server:main',
             'move_robot_client = my_py_pkg.move_robot_client:main',
-
+            'number_publisher = my_py_pkg.number_publisher:main',
+            'number_publisher_lifecycle = my_py_pkg.number_publisher_lifecycle:main',
+            'lifecycle_node_manager = my_py_pkg.lifecycle_node_manager:main',
 
         ],
     },
