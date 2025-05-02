@@ -1,9 +1,9 @@
 <launch>
 
-    <node pkg="my_py_pkg" exec="number_publisher_lifecycle" name="number_publisher_lifecycle">
+    <node pkg="lifecycle_py" exec="number_publisher_lifecycle" name="number_publisher_lifecycle">
         
     </node>
-    <node pkg="my_py_pkg" exec="lifecycle_node_manager" name="lifecycle_node_manager">
+    <node pkg="lifecycle_py" exec="lifecycle_node_manager" name="lifecycle_node_manager">
         
     </node>
 
