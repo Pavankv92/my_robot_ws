@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'manual_composition = components_py.manual_composition:main'
         ],
     },
 )
