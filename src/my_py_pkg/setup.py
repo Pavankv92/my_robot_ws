@@ -23,15 +23,9 @@ setup(
             'first_node = my_py_pkg.first_node:main',
             'my_publisher = my_py_pkg.my_publisher:main',
             'my_subscriber = my_py_pkg.my_subscriber:main',
-            'add_two_ints_server = my_py_pkg.add_two_ints_server:main',
-            'add_two_ints_client_no_oop = my_py_pkg.add_two_ints_client_no_oop:main',
-            'add_two_ints_client = my_py_pkg.add_two_ints_client:main',
+            
             'hardware_status_publisher = my_py_pkg.hardware_status_publisher:main',
             'param_publisher = my_py_pkg.param_publisher:main',
-            'count_until_server = my_py_pkg.count_until_server:main',
-            'count_until_client = my_py_pkg.count_until_client:main',
-            'move_robot_server = my_py_pkg.move_robot_server:main',
-            'move_robot_client = my_py_pkg.move_robot_client:main',
             'number_publisher = my_py_pkg.number_publisher:main',
             
             
