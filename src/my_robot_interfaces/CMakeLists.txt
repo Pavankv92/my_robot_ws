@@ -13,6 +13,8 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HardwareStatus.msg"
   "srv/GoHomePosition.srv"
+  "srv/EulerToQuaternion.srv"
+  "srv/QuaternionToEuler.srv"
   "action/CountUntil.action"
   "action/MoveRobot.action"
 

@@ -17,5 +17,7 @@ sudo apt install -y python3-colcon-common-extensions
 sudo apt install -y ros-$ROS_DISTRO-rqt
 sudo apt install -y ros-$ROS_DISTRO-rviz2
 sudo apt install -y ros-$ROS_DISTRO-diagnostics
+sudo apt install -y ros-$ROS_DISTRO-tf-transformations
+
 
 echo "Installation of ROS2 packages for $ROS_DISTRO completed."
