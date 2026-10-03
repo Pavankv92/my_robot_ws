@@ -4,7 +4,7 @@
   <name>components_py</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="pavankv92@gmail.com">pavankv</maintainer>
+  <maintainer email="roboguru.92@gmail.com">pavankv</maintainer>
   <license>TODO: License declaration</license>
 
   <test_depend>ament_copyright</test_depend>
