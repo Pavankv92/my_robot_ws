@@ -14,7 +14,7 @@ setup(
     install_requires=['setuptools', 'rclpy', 'tkinter'],
     zip_safe=True,
     maintainer='pavankv',
-    maintainer_email='pavankv92@gmail.com',
+    maintainer_email='roboguru.92@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
