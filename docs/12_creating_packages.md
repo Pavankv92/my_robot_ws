@@ -9,6 +9,8 @@ How to set up the four kinds of package you'll need:
 | 3 | [Python + C++ in one package](#3-python--c-in-one-package) | `ament_cmake` + `ament_cmake_python` | [`src/my_robot_utils`](../src/my_robot_utils) |
 | 4 | [Using an external C++ library (`.so`)](#4-using-an-external-c-library-so) | `ament_cmake` | the ST3215 servo SDK (`scservo_sdk`) |
 
+What each line in these files means: [22_cmakelists_and_package_xml.md](22_cmakelists_and_package_xml.md).
+
 All packages live in `src/`, and are created **from inside `src/`**:
 
 ```bash

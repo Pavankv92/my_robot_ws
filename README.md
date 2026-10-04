@@ -32,6 +32,7 @@ Notes in learning order, in [`docs/`](docs):
 
 | # | Topic | # | Topic |
 |---|---|---|---|
+| 00 | [What the hell is CMakeLists.txt? (start here for C++)](docs/00_what_the_hell_is_cmakelists.md) | | |
 | 01 | [Workspace and build](docs/01_workspace_and_build.md) | 12 | [Creating packages: Python, C++, both, external libraries](docs/12_creating_packages.md) |
 | 02 | [Nodes and topics](docs/02_nodes_and_topics.md) | 13 | [URDF and xacro](docs/13_urdf_and_xacro.md) |
 | 03 | [Communication overview](docs/03_communication_overview.md) | 14 | [TF2](docs/14_tf2.md) |
@@ -42,7 +43,7 @@ Notes in learning order, in [`docs/`](docs):
 | 08 | [Launch files](docs/08_launch_files.md) | 19 | [Simulation time (`use_sim_time`)](docs/19_simulation_time.md) |
 | 09 | [Executors](docs/09_executors.md) | 20 | [ros2 bag](docs/20_ros2_bag.md) |
 | 10 | [Lifecycle nodes](docs/10_lifecycle_nodes.md) | 21 | [C++ basics (rclcpp)](docs/21_cpp_basics.md) |
-| 11 | [Components](docs/11_components.md) | | |
+| 11 | [Components](docs/11_components.md) | 22 | [CMakeLists.txt and package.xml explained](docs/22_cmakelists_and_package_xml.md) |
 
 Each note follows the same shape: **when** to use it, the **commands**, minimal **code**, **gotchas**, and **see also** links.
 
